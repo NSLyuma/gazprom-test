@@ -4,7 +4,18 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .chart {
-  width: 900px;
-  height: 600px;
+  width: 778px;
+  height: 561px;
 }/*# sourceMappingURL=index.css.map */
