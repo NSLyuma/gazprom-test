@@ -4,8 +4,8 @@ const getTotal = (array1, array2) => array1.map((num, i) => num + array2[i]);
 // function for get percent from total value and it's part
 const getPercents = (total, part) => Math.round((part * 100) / total);
 
-// get current year for tooltip
-const currentYear = new Date().getFullYear();
+// get last year for tooltip
+const lastYear = new Date().getFullYear() - 1;
 
 // get periods and legends
 // we need only unique values, so I use Set
@@ -95,7 +95,7 @@ const createTooltip = (params) => {
   );
 
   return `<div class="tooltip">
-            <p>${params[0].axisValue} ${currentYear}</p>
+            <p>${params[0].axisValue} ${lastYear}</p>
             <p class="tooltip_subtitle">В программе
               <span>${currentPercentIn}% | ${currentTotalIn} шт.</span>
             </p>
