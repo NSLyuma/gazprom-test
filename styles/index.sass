@@ -15,3 +15,41 @@ body
 .chart
   width: 778px
   height: 561px
+
+.tooltip
+  font-size: 12px
+  font-weight: 700
+  min-width: 190px
+  color: #002033
+  &_subtitle
+    display: flex
+    justify-content: space-between
+    margin: 9.5px 0
+  &_label
+    font-weight: 400
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin-bottom: 8px
+  &_project
+    display: flex
+    justify-content: space-between
+    flex: 1 1 auto
+  &_values
+    font-weight: 700
+  &_circle
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    margin-right: 8px
+    flex: 0 0 auto
+    &_in
+      &-it
+        background-color: #0078D2
+      &-cp
+        background-color: #56B9F2
+    &_out
+      &-it
+        background-color: #00724C
+      &-cp
+        background-color: #22C38E

@@ -18,4 +18,51 @@ body {
 .chart {
   width: 778px;
   height: 561px;
+}
+
+.tooltip {
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 190px;
+  color: #002033;
+}
+.tooltip_subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 9.5px 0;
+}
+.tooltip_label {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.tooltip_label:not(:last-child) {
+  margin-bottom: 8px;
+}
+.tooltip_project {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+.tooltip_values {
+  font-weight: 700;
+}
+.tooltip_circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex: 0 0 auto;
+}
+.tooltip_circle_in-it {
+  background-color: #0078D2;
+}
+.tooltip_circle_in-cp {
+  background-color: #56B9F2;
+}
+.tooltip_circle_out-it {
+  background-color: #00724C;
+}
+.tooltip_circle_out-cp {
+  background-color: #22C38E;
 }/*# sourceMappingURL=index.css.map */
